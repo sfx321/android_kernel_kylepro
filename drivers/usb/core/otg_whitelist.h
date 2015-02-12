@@ -53,7 +53,7 @@ static struct usb_device_id whitelist_table[] = {
 { USB_DEVICE(0x1a0a, 0x0106), }, /* HS_PORT_SUSPEND_RESUME  */
 { USB_DEVICE(0x1a0a, 0x0107), }, /* SINGLE_STEP_GET_DESCRIPTOR setup */
 { USB_DEVICE(0x1a0a, 0x0108), }, /* SINGLE_STEP_GET_DESCRIPTOR execute */
-{ USB_DEVICE(0x1a0a, 0x0200), }  /* OTG Test device */
+{ USB_DEVICE(0x1a0a, 0x0200), }, /* OTG Test device */
 
 { }	/* Terminating entry */
 };
