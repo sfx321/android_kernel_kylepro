@@ -45,6 +45,9 @@ static void sec_reboot(char str, const char *cmd)
 		else if (!strcmp(cmd, "recovery"))
 			__raw_writel(REBOOT_MODE_PREFIX | REBOOT_MODE_RECOVERY,
 			       BROADCOM_INFORM3);
+		else if (!strcmp(cmd, "bootloader"))
+			__raw_writel(REBOOT_MODE_PREFIX | REBOOT_MODE_DOWNLOAD,
+			       BROADCOM_INFORM3);
 		else if (!strcmp(cmd, "download"))
 			__raw_writel(REBOOT_MODE_PREFIX | REBOOT_MODE_DOWNLOAD,
 			       BROADCOM_INFORM3);
